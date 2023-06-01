@@ -1,0 +1,150 @@
+<html>
+
+<head>
+    <title>Project 121</title>
+    <meta charset="utf-8">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <center>
+            <h1><kbd>Case Study | Google Lens and MobileNet</kbd></h1>
+            <br>
+            <br>
+            <div class="container">
+                <ul class="objects">
+                    <br>
+                    <span class="col-xs-12">
+                        <li>
+                            <h2><b>Image - Clock</b></h2>
+                            <br>
+                            <br>
+                            <img src="sample.jpg" class="img-responsive">
+                        </li>
+                        <br>
+                        <h4 class="col-sm-4 col-xs-12">
+                            <b>Google Lens</b> - Orpat Alam Clock
+                            <span></span>
+                        </h4>
+
+                        <h4 class="col-sm-4 col-xs-12">
+                            <b>MobileNet Model</b> - Analog Clock
+                            <span></span>
+                        </h4>
+
+                        <div class="mini_result" class="col-xs-12">
+                            <h4><b>Result - Draw</b></h4>
+                            <hr>
+                            <h4></h4>
+                        </div>
+                    </span>
+                    <br>
+                </ul>
+
+                <ul class="objects">
+                    <br>
+                    <span class="col-xs-12">
+                        <li>
+                            <h2><b>Image - Bottle</b></h2>
+                            <br>
+                            <br>
+                            <img src="bottle.jpg" class="img-responsive">
+                        </li>
+                        <br>
+                        <h4 class="col-sm-4 col-xs-12">
+                            <b>Google Lens</b> - Water Bottle
+                            <span></span>
+                        </h4>
+
+                        <h4 class="col-sm-4 col-xs-12">
+                            <b>MobileNet Model</b> -  Water Bottle
+                            <span></span>
+                        </h4>
+
+                        <div class="mini_result" class="col-xs-12">
+                            <h4><b>Result - Draw</b></h4>
+                            <hr>
+                            <h4></h4>
+                        </div>
+                    </span>
+                    <br>
+                </ul>
+
+                <ul class="objects">
+                    <br>
+                    <span class="col-xs-12">
+                        <li>
+                            <h2><b>Image - Plant</b></h2>
+                            <br>
+                            <br>
+                            <img src="plant.jpg" class="img-responsive">
+                        </li>
+                        <br>
+                        <h4 class="col-sm-4 col-xs-12">
+                            <b>Google Lens</b> - Devil's Ivy
+                            <span></span>
+                        </h4>
+
+                        <h4 class="col-sm-4 col-xs-12">
+                            <b>MobileNet Model</b> - Glass
+                            <span></span>
+                        </h4>
+
+                        <div class="mini_result" class="col-xs-12">
+                            <h4><b>Result - Google Lens</b></h4>
+                            <hr>
+                            <h4></h4>
+                        </div>
+                    </span>
+                    <br>
+                </ul>
+
+                <ul class="objects">
+                    <br>
+                    <span class="col-xs-12">
+                        <li>
+                            <h2><b>Image - Cricket Bat</b></h2>
+                            <br>
+                            <br>
+                            <img src="bat.jpg" class="img-responsive">
+                        </li>
+                        <br>
+                        <h4 class="col-sm-4 col-xs-12">
+                            <b>Google Lens</b> - Cricket Bat
+                            <span></span>
+                        </h4>
+
+                        <h4 class="col-sm-4 col-xs-12">
+                            <b>MobileNet Model</b> - Rifle
+                            <span></span>
+                        </h4>
+
+                        <div class="mini_result" class="col-xs-12">
+                            <h4><b>Result - Google Lens</b></h4>
+                            <hr>
+                            <h4></h4>
+                        </div>
+                    </span>
+                    <br>
+                </ul>
+                <br>
+                <div id="results">
+                    I have take 4 images. MobileNet shows 2 accurate results, while Google Lens shows 4.<br>Therefore, from my Case Study, I can conclude that Google Lens is more accurate.
+                </div>
+                <br>
+            </div>
+            <footer><b>Developed by - Arinjoy Ghosh</b></footer>
+        </center>
+    </div>
+</body>
+
+</html>
